@@ -14,17 +14,17 @@ function writePassword(){
   var integerValue = 0;
   
   var characterAmount =  window.prompt("Number of Characters ( 8 to 128)")
-  var casePrompt = window.prompt("Would you like Uppercase, Lowercase, or Both? (Uppercase,Lowercase,Both)")
-  
-  
-  var specialPrompt = window.prompt("Special Characters?")
-  var integerPrompt= window.prompt ('Would you like number in your password?')
   if (characterAmount<8){
     var characterAmount = window.prompt("Not enough characters. Needs to be atleast 8 character (128 max)")
   }
   
   if (characterAmount>128){
     var characterAmount = window.prompt("Too many characters. Needs to be no more than 128 characters (8 min)")}
+  var casePrompt = window.prompt("Would you like Uppercase, Lowercase, or Both? (Uppercase,Lowercase,Both)")
+  
+  
+  var specialPrompt = window.prompt("Special Characters?")
+  var integerPrompt= window.prompt ('Would you like number in your password?')
 
     document.getElementById('generate').innerHTML= "Generate Another Password"
   for (var x=0; x<characterAmount; x++){
